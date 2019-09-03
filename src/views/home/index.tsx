@@ -15,7 +15,6 @@ class Home extends React.Component{
         this.setState({ collapsed });
       };
 
-      
       public  render() {
         return (
           <div className='box'>
@@ -33,14 +32,7 @@ class Home extends React.Component{
             <Sider>
               <div className="logo" />
               <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-                <Menu.Item key="1">
-                  <Icon type="pie-chart" />
-                  <span>Option 1</span>
-                </Menu.Item>
-                <Menu.Item key="2">
-                  <Icon type="desktop" />
-                  <span>Option 2</span>
-                </Menu.Item>
+            
                 <SubMenu
                   key="sub1"
                   title={
@@ -97,7 +89,7 @@ class Home extends React.Component{
                   key="sub5"
                   title={
                     <span>
-                      <Icon type="user" />
+                      <Icon type="file" />
                       <span>阅卷管理</span>
                     </span>
                   }
@@ -105,10 +97,7 @@ class Home extends React.Component{
                   <Menu.Item key="14">待批班级</Menu.Item>
                  
                 </SubMenu>
-                <Menu.Item key="117">
-                  <Icon type="file" />
-                  <span>File</span>
-                </Menu.Item>
+              
               </Menu>
             </Sider>
             <Layout>
@@ -124,7 +113,6 @@ class Home extends React.Component{
             </Layout>
           </Layout>
           </div>
-       
         );
       }
 
